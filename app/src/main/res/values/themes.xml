@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FinalProject" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green2</item>
+        <item name="colorPrimaryDark">@color/green2</item>
+        <item name="colorPrimaryVariant">@color/grey</item>
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name='MySearchViewStyle' parent='Widget.AppCompat.SearchView'>
+
+
+        <item name="commitIcon">@drawable/ic_search_black_24dp</item>
+
+    </style>
+
+
+
+</resources>

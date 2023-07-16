@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_trading_title"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Trade: Company Name"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_trading_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="(Cash in hand)"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tv_trading_title"/>
+
+        <EditText
+            android:id="@+id/et_dialog_input_shares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/textView3"
+            android:hint="0"
+            android:textSize="38dp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/tv_trading_cash"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="84dp"
+            android:text="Shares"
+            android:layout_below="@+id/tv_trading_cash"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_trading_tot_share_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="Total Shares Value Trade"
+            android:textColor="@color/black"
+            android:layout_below="@+id/et_dialog_input_shares"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_trading_tot_share_val"
+            android:paddingBottom="15dp">
+
+
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_corners"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_corners"
+                tools:ignore="RtlCompat"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

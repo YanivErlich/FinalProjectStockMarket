@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/company_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/green2"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Loading.." />
+
+    <TextView
+        android:id="@+id/company_name_or_shares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/company_ticker"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Loadingg" />
+
+    <TextView
+        android:id="@+id/company_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btn_goTo"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        tools:text="$0" />
+
+    <TextView
+        android:id="@+id/company_price_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btn_goTo"
+        android:layout_below="@+id/company_price"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        tools:text="$0.0" />
+
+    <ImageView
+        android:id="@+id/img_change_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toLeftOf="@+id/company_price_change"
+        android:layout_below="@+id/company_price"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_goTo"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

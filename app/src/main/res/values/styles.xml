@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Stile per la Splash Screen -->
+
+<!--    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">-->
+<!--        <item name="searchHintIcon">@drawable/ic_search_black_24dp</item>-->
+<!--    </style>-->
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1092461264276",
+    "firebase_url": "https://stocks-market-8cef3-default-rtdb.firebaseio.com",
+    "project_id": "final-project-stock-market-8cef3",
+    "storage_bucket": "stocks-market-8cef3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092461264276:android:8b17fe8f6801fd926aa381",
+        "android_client_info": {
+          "package_name": "com.example.finalprojectstockmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092461264276-2v7q8eahofrgv4eao3dj9dbgk3f2a3pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLrjlDF8PG-WWNnH0KCpPvQqY-T4KKUF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092461264276-2v7q8eahofrgv4eao3dj9dbgk3f2a3pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

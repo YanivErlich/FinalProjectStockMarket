@@ -49,6 +49,7 @@ public class ProfileActivity extends AppCompatActivity {
                 count++;
                 if(count%2 != 0) {
                     edtName.setEnabled(true);
+                    edtName.requestFocus();
                     btnUpdate.setVisibility(View.VISIBLE);
                 }else {
                     edtName.setEnabled(false);

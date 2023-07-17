@@ -80,7 +80,7 @@
                     android:id="@+id/imgUser"
                     android:layout_marginLeft="8dp"
                     android:src="@drawable/ic_person"
-                    android:background="@drawable/btn_top"
+                    android:background="@drawable/icon_background"
                     app:tint="@color/white" />
 
 

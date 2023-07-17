@@ -19,7 +19,6 @@
             <ImageView
                 android:layout_width="30sp"
                 android:layout_height="30sp"
-                android:src="@drawable/ic_arrow_back_black_24dp"
                 app:tint="@color/white"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"

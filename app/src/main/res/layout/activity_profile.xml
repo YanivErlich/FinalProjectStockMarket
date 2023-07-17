@@ -25,7 +25,7 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:src="@drawable/ic_person"
-                    android:background="@drawable/btn_top"
+                    android:background="@drawable/icon_background"
                     android:id="@+id/imgUser"
                     app:tint="@color/white" />
 

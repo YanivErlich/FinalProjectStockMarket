@@ -56,19 +56,15 @@ public class SignInActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 email = edtEmail.getText().toString().trim();
                 passowrd = editPassword.getText().toString().trim();
 
-
                 if(TextUtils.isEmpty(email)){
                     edtEmail.setError("Required!");
-                    edtEmail.requestFocus();
                     return;
                 }
                 if(TextUtils.isEmpty(passowrd)){
                     editPassword.setError("Required!");
-                    editPassword.requestFocus();
                     return;
                 }
                 signIn();

@@ -50,7 +50,6 @@
             android:text="Done"
             android:gravity="center"
             android:textColor="@color/green"
-            android:background="@drawable/round_btn_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

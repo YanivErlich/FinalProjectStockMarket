@@ -81,15 +81,7 @@ public class StockInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        dbFavorites = FirebaseDatabase.getInstance().getReference("Favorites").child(userId);
-        dbShares = FirebaseDatabase.getInstance().getReference("SharesOwned").child(userId);
-        context = this;
-        cashInHand = MainActivity.creditAmount;
-        isFavourites = false;
-        Intent intent = getIntent();
-        ticker = intent.getStringExtra(MainActivity.EXTRA_TICKER);
-
+        getFirebaseDb();
 
         numApiCalls = 0;
         isApiFailed = false;
@@ -126,6 +118,17 @@ public class StockInfoActivity extends AppCompatActivity {
         return true;
     }
 
+    void getFirebaseDb(){
+        String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        dbFavorites = FirebaseDatabase.getInstance().getReference("Favorites").child(userId);
+        dbShares = FirebaseDatabase.getInstance().getReference("SharesOwned").child(userId);
+        context = this;
+        cashInHand = MainActivity.creditAmount;
+        isFavourites = false;
+        Intent intent = getIntent();
+        ticker = intent.getStringExtra(MainActivity.EXTRA_TICKER);
+
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -293,11 +296,12 @@ public class StockInfoActivity extends AppCompatActivity {
     }
 
     private void openChrome(String url){
-        Uri uri = Uri.parse(url); // missing 'http://' will cause crashed
+        Uri uri = Uri.parse(url); // missing 'http://' will cause crash
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 
     }
+
 
 
     public void openSuccessDialog(double sharesTraded, String type) {

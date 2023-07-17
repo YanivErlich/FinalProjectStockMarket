@@ -63,27 +63,23 @@ public class SignUpActivity extends AppCompatActivity {
 
                 if (name.isEmpty()) {
                     edtName.setError("Required!");
-                    edtName.requestFocus();
                     return;
                 }
                 if (email.isEmpty()) {
                     edtEmail.setError("Required!");
-                    edtEmail.requestFocus();
+
                     return;
                 }
                 if(Patterns.EMAIL_ADDRESS.matcher(email).matches()==false){
                     edtEmail.setError("Invalid email format!");
-                    edtEmail.requestFocus();
                     return;
                 }
                 if (password.isEmpty()) {
                     edtPassword.setError("Required!");
-                    edtPassword.requestFocus();
                     return;
                 }
                 if (password.length()<6) {
                     edtPassword.setError("Min 6 characters!");
-                    edtPassword.requestFocus();
                     return;
                 }
                 if (credit.isEmpty()) {
